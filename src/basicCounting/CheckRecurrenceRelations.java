@@ -14,8 +14,8 @@ public class CheckRecurrenceRelations {
 
 
 	public static void main(String[] args) {
-		String rootPath = "C:\\ZxcWork\\DiscreteTools\\data\\";
-		String resultFile = rootPath + "result.txt";
+		String rootPath = "F:\\ZxcWork\\DiscreteTools\\data\\";
+		String resultFile = rootPath + "temp.txt";
 		
 		PrintWriter result = null; 
 		try {

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>380</y>
+      <w>340</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;类属类&gt;&gt;
+二元运算&lt;T&gt;
+{T是基集集合元素类型}
+--
+-基集: 类型为T的数组
+-运算表: 二维整数数组
+--
++返回计算结果(两个T类型数据):T
++是否满足交换律():布尔值
++是否满足结合律():布尔值
++是否满足幂等律():布尔值
++是否满足消去律():布尔值
++是否与给定运算满足吸收律(另一个二元运算):布尔值
++是否与给定运算满足分配律(另一个二元运算):布尔值
++是否有单位元():布尔值
++返回单位元():T
++是否有零元():布尔值
++返回零元():T
++给定元素是否有逆元(T类型的元素):布尔值
++返回给定元素的逆元(T类型的元素,T类型数组):整数
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>410</y>
+      <w>330</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;类属类&gt;&gt;
+群&lt;T&gt;
+{T是基集集合元素类型}
+--
+-基集:类型为T的数组
+-二元运算&lt;T&gt;
+--
++返回单位元():T
++返回给定元素的逆(类型为T的元素):T
++计算给定元素的阶(类型为T的元素):整数
++返回所有子群():子群基集列表
++返回所有生成子群():子群基集列表
++计算给定元素生成的子群(类型为T的元素):子群基集
++返回群的所有生成元():生成元集合
++返回给定子群的生成元(子群基集):生成元集合
++是否循环群():布尔值
++给定子集是否是子群(子集):布尔值</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>210</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>置换群的商群
+{基集为置换群的陪集}
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>210</y>
+      <w>360</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>置换群
+{基集为置换的集合}
+--
+
+--
++计算给定子群的所有左陪集(置换集合):置换的陪集集合
++计算给定子群的所有右陪集(置换集合):置换的陪集集合
++给定置换子集是否正规子群(置换集合):布尔值
++计算给定置换子集的商群(置换集合):置换群的商群
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>60</y>
+      <w>300</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>置换
+--
+-置换结果: 整数数组
+--
++是否恒等置换():布尔值
++计算置换的复合(另一置换):置换
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>60</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>偏序关系
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>580</y>
+      <w>300</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>单位模m乘群(U(m)群)
+{基集为整数集合}
+--
+-m: 整数
+--
++计算给定子群的所有陪集(子群基集):陪集集合
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>60</y>
+      <w>310</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>格
+--
+-上确界运算: 基集类型为字符的二元运算
+-下确界运算: 基集类型为字符的二元运算
+--
++从偏序构造格(偏序):格
++是否有界格():布尔值
++是否有补格():布尔值
++是否分配格():布尔值
++是否布尔代数():布尔值
++是否有最大元():布尔值
++返回最大元():字符
++是否有最小元():布尔值
++返回最小元():字符
++给定元素是否有补元(字符):布尔值
++返回给定元素的所有补元(字符, 字符数组):整数
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>60</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>置换群的陪集
+--
+-置换的集合
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>80</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>280</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>330</y>
+      <w>190</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;170.0;120.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>520</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>80</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>130</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>90</y>
+      <w>60</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>120</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>250</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>520</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>290</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

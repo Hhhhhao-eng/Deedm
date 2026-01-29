@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>340</y>
+      <w>170</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>集合
+--
+-元素: 字符数组
+--
++集合交(集合):集合
++集合并(集合):集合
++集合差(集合):集合
++对称差(集合):集合
++幂集():集合数组
++是否成员(字符):布尔值
++是否空集():布尔值
++是否子集(集合):布尔值
++随机生成子集(全集):集合
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>240</y>
+      <w>260</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>关系
+--
+-源集合:集合
+-目标集合:集合
+-元素: 有序对列表
+--
++关系交(关系):关系
++关系并(关系):关系
++关系差(关系):关系
++关系逆():关系
++关系复合(关系):关系
++是否子关系(关系):关系
++是否自反():布尔值
++是否反自反():布尔值
++是否对称():布尔值
++是否反对称():布尔值
++是否传递():布尔值
++是否函数():布尔值
++自反闭包():关系
++对称闭包():关系
++基于复合计算传递闭包():关系
++基于Warshall算法计算传递闭包():关系
++返回关系矩阵():矩阵
++返回关系图():抽象图
++笛卡尔积(源集,目标集):关系
++随机生成关系(源集,目标集):关系
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>550</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>有序对
+--
+-第一个元素:字符
+-第二个元素:字符
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>120</y>
+      <w>320</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>偏序关系
+--
+
+--
++是否存在最大元():布尔值
++返回最大元():字符
++是否存在最小元():布尔值
++返回最小元():字符
++返回极大元(子集,可能的极大元数组):极大元个数
++返回极小元(子集,可能的极小元数组):极小元个数
++返回上界(子集,可能的上界数组):上界个数
++返回下界(子集,可能的上界数组):下界个数
++是否存在上确界(子集):布尔值
++返回上确界(子集):字符
++是否存在下确界(子集):布尔值
++返回下确界(子集):字符
++返回哈斯图():抽象图
++随机生成偏序关系(集合):偏序关系
++基于整除生成偏序关系(整数集合):偏序关系
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>110</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>函数
+--
+
+--
++是否单函数():布尔值
++是否满函数():布尔值
++是否双函数():布尔值
++随机生成函数(源集合,目标集合):函数
++随机生成单函数(源集合,目标集合):函数
++随机生成满函数(源集合,目标集合):函数
++随机生成双函数(源集合,目标集合):函数</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>500</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>等价关系
+--
+
+--
++返回等价类(元素):集合
++返回商集():集合列表
++随机生成划分(集合):集合数组
++随机生成等价关系(集合):关系
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>120</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;抽象类&gt;&gt;
+抽象图
+--
+
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>270</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>400</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;180.0;60.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>550</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>450</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>200</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>160</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>570</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+
+</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

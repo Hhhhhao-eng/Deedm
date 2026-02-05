@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/firstOrderLogic/formula/term/TermExample.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/guiManager/ConfigurationUIManager.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/guiManager/MainGUIManager.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/guiManager/graph/TreeTravelUIManager.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/guiManager/logic/FormulaSyntaxUIManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/proplogic/TestFormula.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/util/Configuration.java" charset="GBK" />
   </component>
 </project>
